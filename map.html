@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssstart.css">
+    <title>Maps</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="best_practices.html">Best Practices</a></li>
+                <li><a href="categorical_one.html">Categorical</a></li>
+                <li><a href="numeric_one.html">Numeric</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="feedback.html">Give us your feedback!</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div id="logotext">
+            <img src="logo.png" alt="Logo">
+            <h1>The Visualization Menagerie</h1>
+        </div>
+    </header>
+    <main>
+
+        <p>We will take a look at endangered languages around the world for this section.
+            The data used is freely available from <a
+                href="https://www.theguardian.com/news/datablog/2011/apr/15/language-extinct-endangered">
+                The Guardian</a>. What makes a map useful? We might want to see where the languages are spoken,
+            or which countries have the most endangered languages, or get an idea of how they are distributed throughout
+            the world.</p>
+
+        <div class='tableauPlaceholder' id='viz1687308497705' style='position: relative'><noscript><a href='#'><img
+                        alt='Dashboard 3 '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;Point_Map&#47;Dashboard3&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Point_Map&#47;Dashboard3' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;Point_Map&#47;Dashboard3&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1687308497705'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        Our first map shows one point for each language. In order to make a map like this, you need actual geographic
+        coordinates, that is the latitude and longitude that corresponds to each language. I would refer to this as a
+        point map, but you may hear other names. Notice that the points are color coded by the degree of endangerment
+        which adds another dimension, and the size of each point corresponds to the number of speakers, which is yet
+        another dimension! It’s hard to count up all of the points in a particular country just by looking at the map.
+        Perhaps we could create a map that gives us a summary for each country……
+
+        [Choropleth map dashboard/image below]
+
+        Our second map is s choropleth map – it summarizes data over areas called polygons – these could be cities,
+        counties, provinces, or as in our case, countries. The color of each country tells us whether there are a lot or
+        only a few endangered languages. In order to make a map like this, you need the names of locations and the
+        coordinates that define those locations – think of this like connect the dots – each set of coordinates is a
+        dot, and if we draw lines between them in order, we will make the area on the map! The coordinates for the areas
+        (polygons) are typically not part of the data you collect, but rather can be found in other files that are
+        publicly available. We can see on this map that Brazil, India, and the United States have the largest numbers of
+        endangered languages.
+
+    </main>
+    <hr>
+    <footer>
+        <address>Copyright 2023 by Dana Willner (mailto:)</address>
+    </footer>
+</body>
+
+</html>

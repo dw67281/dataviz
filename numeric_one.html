@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/cssstart.css">
+        <title>Numeric Data Viz 1</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="best_practices.html">Best Practices</a></li>
+                    <li><a href="categorical_one.html">Categorical</a></li>
+                    <li><a href="numeric_one.html" class="active">Numeric</a></li>
+                    <li><a href="maps.html">Maps</a></li>
+                    <li><a href="feedback.html">Give us your feedback!</a></li>
+                </ul>
+            </nav>
+            <div class="logotext">
+                <img src="image/logo.png" alt="Logo">
+                <h1>The Visualization Menagerie</h1>
+            </div>
+        </header>
+
+        <main>
+            <h2>How can we summarize numeric variables?</h2>
+
+            <p>It is common to report summary statistics for variables that are numeric, things like the mean and the
+                standard deviation, or the median. One group of statistics is the five number summary: the minimum,
+                the first quartile, the median, the third quartile, and the maximum value. This is one way to get a
+                summary of how the data is distributed, but we might want to also look at the actual distribution, that
+                is, what the actual values are and how many there are in various data ranges. In the figure below,
+                we will look at the ages of voters in the data set, dividing them up in those who always vote,
+                those who vote sporadically, and those who never vote.
+            </p>
+
+            <img src="image/hist_box.svg" alt="histogram and boxplot" class="scalesvg">
+
+            <p>A <dfn>box plot</dfn> shows the five number summary graphically, from the minimum to the quartiles to the
+                maximum. We can see in general that the Never box plot is the leftmost, which means it has the smallest
+                values, i.e. the youngest voters overall. The Always box plot is the rightmost, and hence has older
+                voters than the other two.
+            </p>
+
+            <p>A <dfn>histogram</dfn> groups the data into bins, ages 20-&lt;30, 30-&lt;40,40-&lt;50 and so forth. The
+                height of each bar indicates how many observations were in that group. We can see something slightly
+                different now: the Always voting group has a lot of younger voters and also a lot of older voters -
+                we couldn't really tell that from the box plots. Box plots are often hard for those with no statistical
+                background to interpret, and they don't tell us anything about how many observations there are…unless
+                we add that information specifically.
+            </p>
+
+        </main>
+
+        <footer>
+            <p class="navhelper">What if you have more than one numeric variable and you want to look at relationships
+                between your variables? Click <a href="numeric_two.html">HERE </a>to find out!</p>
+            <address>Copyright 2023 by <a href='mailto:dlwillner0001@vccs.edu'>Dana Willner</a></address>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/cssstart.css">
+        <title>Numeric Data Viz 2</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="best_practices.html">Best Practices</a></li>
+                    <li><a href="categorical_one.html">Categorical</a></li>
+                    <li><a href="numeric_one.html" class="activechild">Numeric</a></li>
+                    <li><a href="maps.html">Maps</a></li>
+                    <li><a href="feedback.html">Give us your feedback!</a></li>
+                </ul>
+            </nav>
+            <div class="logotext">
+                <img src="image/logo.png" alt="Logo">
+                <h1>The Visualization Menagerie</h1>
+            </div>
+        </header>
+        <main>
+            <p>We're going to change it up just for this page and explore a different data set. This data set is fake,
+                but resembles some real data sets that I worked with. The data describes bacterial communities you might
+                find in a person's lungs, specifically a person with Cystic Fibrosis (CF) or Chronic Obstructive
+                Pulmonary Disease (COPD). These are both chronic respiratory conditions that often have co-occuring
+                and persistent bacterial lung infections. We want to know if the bacteria in the lungs look different
+                for people with CF versus COPD. Each variable is the name of a type of Bacteria and the values are the
+                percentage of that bacterial type we found out of the total. One thing to know is that bacteria like to
+                compete with each other for food and space.
+            </p>
+            <section>
+                <h2>How do we explore relationships between two variables?</h2>
+
+                <img src="image/scatter.svg" alt="scatterplots" class="scalesvg">
+
+                <p>A <dfn>scatterplot</dfn> shows the relationship between two numeric variables - as one increases,
+                    what does the other one do? The scatterplots show how Streptococcus and Veillonella populations vary
+                    with each other. [Don't be scared of the variables, these are just names for organisms, like Turtles
+                    and Lizards, you can think of them as those instead if you like.] The plot on the left shows all of
+                    the data with the same color and marker. Notice that there are two groups. We also had two groups in
+                    our study population. The plot on the right uses different colors and markers to show the CF and
+                    COPD groups. Now we can see what's really going on: for individuals with CF, there just isn't much
+                    of either type of bacteria; for individuals with COPD the more Streptococcus you have, the less
+                    Veillonella you have and vice versa.
+                </p>
+            </section>
+
+            <section>
+                <h2>What about more than two variables?</h2>
+
+                <img src="image/pcp.svg" alt="par coords plot" class="scalesvg">
+
+                <p>This plot looks pretty complicated! This <dfn>parallel coordinates plot</dfn> is showing the values
+                    of five variables,five different types of bacteria side by side. The colors represent the CF and
+                    COPD groups. Each line represents a single individual. What we are looking for is whether lines
+                    group together in any sort of discernable pattern. We can see some clear patterns when we look at
+                    all five variables together. Individuals with COPD tend to have a lot of Streptococcus,
+                    and a bit less Prevotella and Veillonella. They don’t have Pseudomonas and Staphylococcus. CF
+                    individuals fall into two groups: those with a lot of Pseudomonas and not much of anything else, and
+                    those with a lot of Staphylococcus and not much of anything else.</p>
+            </section>
+
+
+        </main>
+
+        <footer>
+            <p class="navhelper">Want to review what to do for one variable? Click <a href="numeric_one.html">HERE</a>
+            </p>
+            <address>Copyright 2023 by <a href='mailto:dlwillner0001@vccs.edu'>Dana Willner</a></address>
+        </footer>
+    </body>
+
+</html>
