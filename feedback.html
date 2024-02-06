@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/cssstart.css">
+        <title>Feedback Form</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="best_practices.html">Best Practices</a></li>
+                    <li><a href="categorical_one.html">Categorical</a></li>
+                    <li><a href="numeric_one.html">Numeric</a></li>
+                    <li><a href="maps.html">Maps</a></li>
+                    <li><a href="feedback.html" class="active">Give us your feedback!</a></li>
+                </ul>
+            </nav>
+            <div class="logotext">
+                <img src="image/logo.png" alt="Logo">
+                <h1>The Visualization Menagerie</h1>
+            </div>
+        </header>
+
+        <main>
+            <form action="feedback.php" method="POST">
+                <h2>Share your feedback!</h2>
+                <p>I am interested to hear what you think about the page and what you are working on!
+                    Please fill out the form below to share your thoughts - thank you!</p>
+
+                <fieldset>
+                    <legend>About You</legend>
+                    <label>Email<br><input type="email" name="email"></label>
+                    <p>Which group best describes you?</p>
+                    <ul>
+                        <li><label><input type="radio" name="group" value="undergraduate"> Undergraduate Student
+                            </label></li>
+                        <li><label><input type="radio" name="group" value="graduate"> Graduate Student
+                            </label></li>
+                        <li><label><input type="radio" name="group" value="faculty"> University Faculty
+                            </label></li>
+                        <li><label><input type="radio" name="group" value="staff"> University Staff
+                            </label></li>
+                        <li><label><input type="radio" name="group" value="other"> Other
+                            </label></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Usefulness of the Site</legend>
+                    <p>Which of the following did you use the site for? (Select all that apply.)</p>
+                    <ul>
+                        <li><label><input type="checkbox" name="used_for[]" value="learning"> Learning about Data
+                                Visualization principles</label></li>
+                        <li><label><input type="checkbox" name="used_for[]" value="examples"> Examples of visualizations
+                                to
+                                use as a template</label></li>
+                        <li><label><input type="checkbox" name="used_for[]" value="examples"> Creating visualizations
+                                for a
+                                project</label></li>
+                        <li><label><input type="checkbox" name="used_for[]" value="examples"> Help with a class I am
+                                taking</label></li>
+                        <li><label><input type="checkbox" name="used_for[]" value="examples"> Ideas for teaching Data
+                                Visualization</label></li>
+                    </ul>
+                    <p>On a 10 point scale, with 10 being extremely essential and useful
+                        to 1 being not useful at all, how useful was the site? <br>
+                        <select name="ranking" size="10" required>
+                            <option>10</option>
+                            <option>9</option>
+                            <option>8</option>
+                            <option>7</option>
+                            <option>6</option>
+                            <option>5</option>
+                            <option>4</option>
+                            <option>3</option>
+                            <option>2</option>
+                            <option>1</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label>Please share any additional thoughts or feedback you have here!
+                        <br><textarea name="additional" rows="5" cols="100" maxlength="2000"
+                            placeholder="Limited to 2000 characters"></textarea></label>
+                </fieldset>
+                <p><input type="submit" value="Submit feedback!" class="button">&emsp;<input type="reset"
+                        class="button">
+                </p>
+            </form>
+        </main>
+    </body>
+
+</html>
